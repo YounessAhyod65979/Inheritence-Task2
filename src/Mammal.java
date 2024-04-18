@@ -1,4 +1,3 @@
-// Mammal.java
 public class Mammal extends Animal {
     public Mammal() {}
 

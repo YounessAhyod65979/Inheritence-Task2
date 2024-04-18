@@ -1,5 +1,5 @@
 
-public class Pigeon extends Bird {
+public class Pigeon extends Bird implements AnimalBehavior, AnimalMove {
     protected String species;
 
     public Pigeon() {}
@@ -32,4 +32,9 @@ public class Pigeon extends Bird {
                 ", species='" + species + '\'' +
                 '}';
     }
+    @Override
+    public void sleep() {
+        System.out.println("Pigeon is sleeping");
+    }
+
 }

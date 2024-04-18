@@ -5,7 +5,9 @@ public class Bird extends Animal {
     public Bird() {}
 
     public Bird(String name, int age, double weight, String featherColor) {
+
         super(name, age, weight);
+
         this.featherColor = featherColor;
     }
 
@@ -19,7 +21,7 @@ public class Bird extends Animal {
         return "Bird sound";
     }
 
-    // Getter and setter for featherColor
+
     public String getFeatherColor() {
         return featherColor;
     }
@@ -30,6 +32,7 @@ public class Bird extends Animal {
 
     @Override
     public String toString() {
+
         return "Bird{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
